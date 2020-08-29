@@ -1,0 +1,33 @@
+@import "fonts.css";
+@import "./public/registration/style.css";
+
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+
+  .container {
+    .width-and-height {
+      width: 500px;
+      height: 450px;
+      align-items: center;
+
+      .from {
+        .inputs-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+
+          .form__input {
+            font-size: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.32);
+            border-radius: 4px;
+            width: 360px;
+            padding-left: 10px;
+            height: 50px;
+            margin-right: 5px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}

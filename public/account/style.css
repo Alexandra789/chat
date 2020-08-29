@@ -1,0 +1,129 @@
+@import "../../fonts.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  background-color: #F2F2F2;
+}
+body .header {
+  background: #3F51B5;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+body .header .logo {
+  align-self: center;
+  margin-left: 35px;
+}
+body .header ul {
+  width: 100%;
+  align-self: center;
+  list-style: none;
+}
+body .header ul .header__item {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+}
+body .header ul .header__item:last-of-type {
+  float: right;
+}
+body .header ul .header__item:nth-last-child(2) {
+  margin-left: 20px;
+  margin-right: 35px;
+  float: right;
+}
+body .header ul .header__item a {
+  text-decoration: none;
+}
+body .header ul .header__item a .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.0555556px;
+  color: #FFFFFF;
+}
+body .header ul .header__item a img {
+  filter: invert(1);
+}
+body .main .left-column {
+  width: 270px;
+  height: 100vh;
+  background: #FFFFFF;
+  border: 1px solid rgba(63, 63, 68, 0.005);
+  box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
+  float: left;
+}
+body .main .left-column .personal-information {
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #E4E7EB;
+}
+body .main .left-column .personal-information .profile-image-wrapper {
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+body .main .left-column .personal-information .profile-image-wrapper .personal-information__image {
+  width: auto;
+  height: 100%;
+  margin: 0px -19px;
+}
+body .main .left-column .personal-information .personal-information__name {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #3A3B3F;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+body .main .left-column .personal-information .personal-information__position {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #9EA0A5;
+}
+body .main .left-column .menu {
+  margin-top: 25px;
+}
+body .main .left-column .menu .support-title {
+  padding-top: 25px;
+  font-size: 14px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.328974);
+}
+body .main .left-column .menu ul {
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid #E4E7EB;
+}
+body .main .left-column .menu .menu__item, body .main .left-column .menu .support-title {
+  list-style: none;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+body .main .left-column .menu .menu__item a, body .main .left-column .menu .support-title a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #66788A;
+}
+body .main .left-column .menu .menu__item a:hover, body .main .left-column .menu .support-title a:hover {
+  color: #13279d;
+}
+body .main .left-column .menu .menu__item a .icon, body .main .left-column .menu .support-title a .icon {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

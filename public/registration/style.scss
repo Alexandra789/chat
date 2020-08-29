@@ -17,7 +17,7 @@ body {
     height: 100vh;
     background: #F2F2F2;
 
-    .registration {
+    .main-content {
       display: flex;
       justify-content: space-between;
       width: 960px;
@@ -45,12 +45,12 @@ body {
           justify-content: space-between;
         }
 
-        .registration-from {
+        .from {
           .title-and-subtitle {
             margin-top: 25px;
             margin-bottom: 25px;
 
-            .registration-form__title {
+            .form__title {
               font-family: "Roboto Bold";
               font-weight: 500;
               font-size: 24px;
@@ -60,7 +60,7 @@ body {
           }
 
           .inputs-wrapper {
-            .registration-form__input {
+            .form__input {
               font-size: 16px;
               &:not(:nth-last-of-type(2)) {
                 border: 1px solid rgba(0, 0, 0, 0.32);
@@ -76,7 +76,7 @@ body {
                 margin-bottom: 25px;
               }
 
-              &:last-child {
+              &:last-of-type {
                 font-weight: 500;
                 text-align: center;
                 letter-spacing: 1.25px;
