@@ -79,6 +79,7 @@ body .container .main-content .left .from .inputs-wrapper .form__input:last-of-t
   transition: all 0.3s ease 0s;
 }
 body .container .main-content .left .from .inputs-wrapper .form__input:last-of-type:hover {
+  cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
 }
 body .container .main-content .left .from .inputs-wrapper .form__input:last-of-type:active {

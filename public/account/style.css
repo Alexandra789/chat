@@ -52,21 +52,22 @@ body .header ul .header__item a .title {
 body .header ul .header__item a img {
   filter: invert(1);
 }
-body .main .left-column {
-  width: 270px;
+body .main {
+  display: flex;
+}
+body .main .left-navigation {
+  width: 300px;
   height: 100vh;
   background: #FFFFFF;
-  border: 1px solid rgba(63, 63, 68, 0.005);
-  box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
   float: left;
 }
-body .main .left-column .personal-information {
+body .main .left-navigation .personal-information {
   text-align: center;
   margin-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1.5px solid #E4E7EB;
 }
-body .main .left-column .personal-information .profile-image-wrapper {
+body .main .left-navigation .personal-information .profile-image-wrapper {
   border-radius: 50%;
   margin: 0 auto;
   text-align: center;
@@ -74,12 +75,12 @@ body .main .left-column .personal-information .profile-image-wrapper {
   width: 100px;
   overflow: hidden;
 }
-body .main .left-column .personal-information .profile-image-wrapper .personal-information__image {
+body .main .left-navigation .personal-information .profile-image-wrapper .personal-information__image {
   width: auto;
   height: 100%;
   margin: 0px -19px;
 }
-body .main .left-column .personal-information .personal-information__name {
+body .main .left-navigation .personal-information .personal-information__name {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.05px;
@@ -87,31 +88,31 @@ body .main .left-column .personal-information .personal-information__name {
   margin-top: 10px;
   margin-bottom: 2px;
 }
-body .main .left-column .personal-information .personal-information__position {
+body .main .left-navigation .personal-information .personal-information__position {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: #9EA0A5;
 }
-body .main .left-column .menu {
+body .main .left-navigation .menu {
   margin-top: 25px;
 }
-body .main .left-column .menu .support-title {
+body .main .left-navigation .menu .support-title {
   padding-top: 25px;
   font-size: 14px;
   line-height: 15px;
   color: rgba(0, 0, 0, 0.328974);
 }
-body .main .left-column .menu ul {
+body .main .left-navigation .menu ul {
   padding-bottom: 10px;
   border-bottom: 1.5px solid #E4E7EB;
 }
-body .main .left-column .menu .menu__item, body .main .left-column .menu .support-title {
+body .main .left-navigation .menu .menu__item, body .main .left-navigation .menu .support-title {
   list-style: none;
   margin-left: 40px;
   margin-bottom: 15px;
 }
-body .main .left-column .menu .menu__item a, body .main .left-column .menu .support-title a {
+body .main .left-navigation .menu .menu__item a, body .main .left-navigation .menu .support-title a {
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
@@ -119,11 +120,124 @@ body .main .left-column .menu .menu__item a, body .main .left-column .menu .supp
   letter-spacing: -0.05px;
   color: #66788A;
 }
-body .main .left-column .menu .menu__item a:hover, body .main .left-column .menu .support-title a:hover {
+body .main .left-navigation .menu .menu__item a:hover, body .main .left-navigation .menu .support-title a:hover {
   color: #13279d;
 }
-body .main .left-column .menu .menu__item a .icon, body .main .left-column .menu .support-title a .icon {
+body .main .left-navigation .menu .menu__item a .icon, body .main .left-navigation .menu .support-title a .icon {
   margin-right: 5px;
+}
+body .main .profile-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .profile-page .profile-img-block {
+  border-radius: 4px;
+  margin: 20px;
+  width: 230px;
+  height: 270px;
+  background: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .main .profile-page .profile-img-block .profile-img {
+  width: 200px;
+  height: 200px;
+}
+body .main .profile-page .profile-img-block .button-upload-img {
+  margin-top: -15px;
+  width: 200px;
+  height: 35px;
+  background-color: #e5ebf1;
+  text-transform: uppercase;
+  color: #000090;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+body .main .profile-page .profile-img-block .button-upload-img:focus {
+  border: none;
+  outline: none;
+}
+body .main .profile-page .profile-img-block .button-upload-img:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+body .main .profile-page .profile-img-block .button-upload-img:active {
+  transform: translateY(5px);
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+body .main .profile-page .profile-information {
+  padding: 15px 25px;
+  margin: 20px 0;
+  border-radius: 4px;
+  height: 500px;
+  width: 60vw;
+  background: #ffff;
+}
+body .main .profile-page .profile-information .block-information {
+  border-bottom: 0.5px solid #00000024;
+  padding-bottom: 15px;
+}
+body .main .profile-page .profile-information .block-information .wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+body .main .profile-page .profile-information .block-information .wrapper .profile__name {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+body .main .profile-page .profile-information .block-information .wrapper .profile__text {
+  color: #9EA0A5;
+}
+body .main .profile-page .profile-information .block-information .profile__status {
+  font-size: 12px;
+  color: #9EA0A5;
+}
+body .main .profile-page .profile-information .block-information .wrapper-columns {
+  display: flex;
+}
+body .main .profile-page .profile-information .block-information .wrapper-columns .title-column, body .main .profile-page .profile-information .block-information .wrapper-columns .info-column {
+  margin-top: 15px;
+  width: 160px;
+}
+body .main .profile-page .profile-information .block-information .wrapper-columns .title-column p, body .main .profile-page .profile-information .block-information .wrapper-columns .info-column p {
+  margin-right: 50px;
+  color: #9EA0A5;
+  margin-bottom: 10px;
+}
+body .main .profile-page .profile-information .block-information .wrapper-columns .info-column p {
+  margin-bottom: 10px;
+  color: #000090;
+}
+body .main .profile-page .profile-information .block-information .button-wrapper {
+  text-align: center;
+  margin-right: 10px;
+}
+body .main .profile-page .profile-information .block-information .button-wrapper .show-info {
+  border: none;
+  color: #000090;
+  width: 57vw;
+  padding: 10px;
+  background: #FFFFFF;
+  text-transform: uppercase;
+}
+body .main .profile-page .profile-information .block-information .button-wrapper .show-info:focus {
+  outline: none;
+}
+body .main .profile-page .profile-information .block-information .button-wrapper .show-info:hover {
+  cursor: pointer;
+  background: #9ea0a524;
+}
+body .main .profile-page .friends-block {
+  background: #FFFFFF;
+  width: 230px;
+  height: 300px;
+  margin: 0px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
